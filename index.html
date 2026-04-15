@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Sticky CTA Button for Mobile -->
@@ -118,7 +119,7 @@
         </div>
         <div class="hero-wave">
             <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#f9fafb"/>
             </svg>
         </div>
     </section>
@@ -330,36 +331,11 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Pilih Paket</span>
+                <span class="section-badge">Paket Lengkap</span>
                 <h2 class="section-title">Investasi untuk Masa Depan</h2>
                 <p class="section-subtitle">Sekali bayar, akses selamanya</p>
             </div>
             <div class="pricing-grid">
-                <!-- Basic -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Basic</h3>
-                        <p class="pricing-desc">Untuk pemula yang ingin mulai</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="currency">Rp</span>
-                        <span class="amount">75.000</span>
-                    </div>
-                    <div class="pricing-usdt">
-                        <i class="fab fa-ethereum"></i> ~4.7 USDT
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Ebook PDF (186 halaman)</li>
-                        <li><i class="fas fa-check"></i> Tutorial lengkap</li>
-                        <li><i class="fas fa-check"></i> Akses lifetime</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Bonus tools</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Support priority</li>
-                    </ul>
-                    <button class="btn-pricing" onclick="selectPackage('basic', 75000, 4.7)">
-                        Pilih Basic
-                    </button>
-                </div>
-
                 <!-- Pro (Best Seller) -->
                 <div class="pricing-card featured">
                     <div class="pricing-badge">
@@ -381,7 +357,7 @@
                         <span class="save-badge">Hemat 50%</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Semua di Basic</li>
+                        <li><i class="fas fa-check"></i> Ebook PDF lengkap</li>
                         <li><i class="fas fa-check"></i> Automation scripts</li>
                         <li><i class="fas fa-check"></i> Content generator</li>
                         <li><i class="fas fa-check"></i> Caption templates</li>
@@ -389,31 +365,6 @@
                     </ul>
                     <button class="btn-pricing btn-featured" onclick="selectPackage('pro', 150000, 9.4)">
                         Pilih Pro
-                    </button>
-                </div>
-
-                <!-- Bundle -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Bundle</h3>
-                        <p class="pricing-desc">Lengkap dengan video tutorial</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="currency">Rp</span>
-                        <span class="amount">300.000</span>
-                    </div>
-                    <div class="pricing-usdt">
-                        <i class="fab fa-ethereum"></i> ~18.8 USDT
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Semua di Pro</li>
-                        <li><i class="fas fa-check"></i> Video tutorial</li>
-                        <li><i class="fas fa-check"></i> 1-on-1 setup</li>
-                        <li><i class="fas fa-check"></i> Private group</li>
-                        <li><i class="fas fa-check"></i> Lifetime updates</li>
-                    </ul>
-                    <button class="btn-pricing" onclick="selectPackage('bundle', 300000, 18.8)">
-                        Pilih Bundle
                     </button>
                 </div>
             </div>
@@ -455,9 +406,9 @@
                                 </button>
                             </div>
                             <div class="qr-code" id="qrCode">
-                                <div class="qr-placeholder">
-                                    <a href="https://ibb.co.com/Fbmz1qkc"><img src="https://i.ibb.co.com/Fbmz1qkc/photo-2026-04-15-23-42-01.jpg" alt="photo-2026-04-15-23-42-01" border="0"></a>
-                                </div>
+                                <a href="https://link.trustwallet.com/send?coin=195&address=TEW7r4BVnr88psSVDNK45D7GGrWgo93FwS&token_id=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t" target="_blank">
+                                    <img src="https://i.ibb.co.com/Fbmz1qkc/photo-2026-04-15-23-42-01.jpg" alt="USDT TRC20 QR Code" style="max-width: 200px; border-radius: 12px;">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -472,16 +423,47 @@
                         </div>
                         <div class="instruction-step">
                             <span class="step-number">3</span>
-                            <p>Kirim bukti ke WhatsApp/Email untuk konfirmasi</p>
+                            <p>Isi form konfirmasi di bawah dengan data pembayaran Anda</p>
                         </div>
                     </div>
                     <div class="payment-contact">
-                        <a href="https://wa.me/628xxxxxxxxxx" class="btn-whatsapp" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Konfirmasi via WhatsApp
-                        </a>
-                        <p class="email-contact">
-                            atau email ke: <a href="mailto:your@email.com">your@email.com</a>
-                        </p>
+                        <form action="https://formsubmit.co/payment@openclawid.com" method="POST" class="payment-form">
+                            <input type="hidden" name="_subject" value="Konfirmasi Pembayaran OpenClaw">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package">Paket</label>
+                                <select id="package" name="package" required>
+                                    <option value="Pro - Rp 150.000">Pro - Rp 150.000 (~9.4 USDT)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="txid">Transaction ID / TxHash</label>
+                                <input type="text" id="txid" name="txid" required placeholder="Masukkan Transaction ID">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">Catatan (Opsional)</label>
+                                <textarea id="notes" name="notes" rows="3" placeholder="Tambahkan catatan jika diperlukan"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="trust-badges">
@@ -584,21 +566,15 @@
                     <a href="#testimonials">Testimoni</a>
                     <a href="#pricing">Harga</a>
                     <a href="#faq">FAQ</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Support</h4>
-                    <a href="#">Email Support</a>
-                    <a href="#">WhatsApp</a>
                     <a href="#">Refund Policy</a>
                 </div>
                 <div class="footer-contact">
                     <h4>Kontak</h4>
-                    <p><i class="fas fa-envelope"></i> support@openclaw.id</p>
-                    <p><i class="fas fa-phone"></i> +62 8xx-xxxx-xxxx</p>
+                    <p><i class="fas fa-envelope"></i> support@openclawid.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 OpenClaw ID. All rights reserved.</p>
+                <p>&copy; 2026 OpenClaw ID. All rights reserved.</p>
             </div>
         </div>
     </footer>

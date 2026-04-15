@@ -171,10 +171,9 @@ function initNetworkTabs() {
     const tabs = document.querySelectorAll('.method-tab');
     const walletAddress = document.querySelector('.address-text');
 
-    // Wallet addresses (update these with your actual addresses)
+    // Wallet addresses - using TRC20 only
     const addresses = {
-        trc20: '[YOUR_TRC20_WALLET_ADDRESS]',
-        bep20: '[YOUR_BEP20_WALLET_ADDRESS]'
+        trc20: 'TEW7r4BVnr88psSVDNK45D7GGrWgo93FwS'
     };
 
     tabs.forEach(tab => {
