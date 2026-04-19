@@ -222,6 +222,35 @@ img {
     box-shadow: var(--shadow-md);
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 0.25rem;
+    margin: 0 1rem;
+}
+
+.lang-btn {
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    color: var(--primary);
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.lang-btn.active {
+    color: var(--white);
+    background: var(--primary);
+}
+
 /* ========================================
    Hero Section
    ======================================== */
@@ -1478,6 +1507,10 @@ img {
     }
 
     .nav {
+        display: none;
+    }
+    
+    .lang-switcher {
         display: none;
     }
 

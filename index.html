@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw Tutorial - AI Assistant Pribadi</title>
+    <title data-i18n="meta_title">OpenClaw Tutorial - AI Assistant Pribadi</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="i18n.js"></script>
 </head>
 <body>
     <!-- Sticky CTA Button for Mobile -->
     <div class="sticky-cta" id="stickyCta">
-        <a href="#pricing" class="btn-sticky">
+        <a href="#pricing" class="btn-sticky" data-i18n="sticky_cta">
             <i class="fas fa-bolt"></i> Dapatkan Sekarang
         </a>
     </div>
@@ -33,9 +34,17 @@
                 <span>OpenClaw ID</span>
             </div>
             <nav class="nav">
-                <a href="#benefits">Manfaat</a>
-                <a href="#testimonials">Testimoni</a>
-                <a href="#pricing" class="nav-cta">Beli Sekarang</a>
+                <a href="#benefits" data-i18n="nav_benefits">Manfaat</a>
+                <a href="#testimonials" data-i18n="nav_testimonials">Testimoni</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="id" onclick="setLanguage('id')">ID</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="ms" onclick="setLanguage('ms')">MY</button>
+                    <button class="lang-btn" data-lang="th" onclick="setLanguage('th')">TH</button>
+                    <button class="lang-btn" data-lang="vi" onclick="setLanguage('vi')">VN</button>
+                    <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+                </div>
+                <a href="#pricing" class="nav-cta" data-i18n="nav_buy">Beli Sekarang</a>
             </nav>
         </div>
     </header>
@@ -45,36 +54,36 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <div class="badge">
+                    <div class="badge" data-i18n="badge_flash">
                         <i class="fas fa-fire"></i> Flash Sale - 50% OFF
                     </div>
                     <h1 class="hero-title">
-                        Punya <span class="gradient-text">AI Assistant</span> Sendiri di Komputer dalam 30 Menit
+                        <span data-i18n="hero_title_1">Punya </span><span class="gradient-text" data-i18n="hero_title_2">AI Assistant</span><span data-i18n="hero_title_3"> Sendiri di Komputer dalam 30 Menit</span>
                     </h1>
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
                         Tutorial lengkap install OpenClaw + Ollama. Tanpa coding, tanpa API key, 100% GRATIS & OFFLINE.
                     </p>
                     <div class="hero-cta">
-                        <a href="#pricing" class="btn-primary">
+                        <a href="#pricing" class="btn-primary" data-i18n="btn_get_now">
                             <i class="fas fa-download"></i> Dapatkan Akses Sekarang
                         </a>
                         <div class="guarantee">
                             <i class="fas fa-shield-alt"></i>
-                            <span>Garansi 7 Hari Uang Kembali</span>
+                            <span data-i18n="guarantee_text">Garansi 7 Hari Uang Kembali</span>
                         </div>
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
                             <span class="stat-number">500+</span>
-                            <span class="stat-label">Terjual</span>
+                            <span class="stat-label" data-i18n="stat_sold">Terjual</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">4.9</span>
-                            <span class="stat-label">Rating</span>
+                            <span class="stat-label" data-i18n="stat_rating">Rating</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
+                            <span class="stat-label" data-i18n="stat_support">Support</span>
                         </div>
                     </div>
                 </div>
@@ -96,21 +105,21 @@
                                     <div class="pdf-features">
                                         <div class="pdf-feature">
                                             <i class="fas fa-check"></i>
-                                            <span>186 Halaman</span>
+                                            <span data-i18n="pdf_pages">50+ Halaman</span>
                                         </div>
                                         <div class="pdf-feature">
                                             <i class="fas fa-check"></i>
-                                            <span>Step-by-Step</span>
+                                            <span data-i18n="pdf_step">Step-by-Step</span>
                                         </div>
                                         <div class="pdf-feature">
                                             <i class="fas fa-check"></i>
-                                            <span>Bahasa Indonesia</span>
+                                            <span data-i18n="pdf_lang">Bahasa Indonesia</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="pdf-badge">
-                                <i class="fas fa-star"></i> BEST SELLER
+                                <i class="fas fa-star" data-i18n="pdf_badge">BEST SELLER</i>
                             </div>
                         </div>
                     </div>
@@ -130,28 +139,28 @@
             <div class="urgency-card">
                 <div class="urgency-header">
                     <i class="fas fa-clock"></i>
-                    <h2>Penawaran Terbatas - Segera Berakhir!</h2>
+                    <h2 data-i18n="urgency_title">Penawaran Terbatas - Segera Berakhir!</h2>
                 </div>
                 <div class="countdown" id="countdown">
                     <div class="countdown-item">
                         <span class="countdown-number" id="hours">23</span>
-                        <span class="countdown-label">Jam</span>
+                        <span class="countdown-label" data-i18n="hours">Jam</span>
                     </div>
                     <div class="countdown-separator">:</div>
                     <div class="countdown-item">
                         <span class="countdown-number" id="minutes">59</span>
-                        <span class="countdown-label">Menit</span>
+                        <span class="countdown-label" data-i18n="minutes">Menit</span>
                     </div>
                     <div class="countdown-separator">:</div>
                     <div class="countdown-item">
                         <span class="countdown-number" id="seconds">59</span>
-                        <span class="countdown-label">Detik</span>
+                        <span class="countdown-label" data-i18n="seconds">Detik</span>
                     </div>
                 </div>
-                <p class="urgency-text">
+                <p class="urgency-text" data-i18n="urgency_text">
                     <i class="fas fa-tag"></i> 
                     Diskon <strong>50%</strong> berlaku untuk 50 pembeli pertama hari ini
-                    <span class="spots-left">(Tersisa <span id="spotsLeft">12</span> slot)</span>
+                    <span class="spots-left">(<span data-i18n="spots_left">Tersisa</span> <span id="spotsLeft">12</span> <span data-i18n="slot_text">slot</span>)</span>
                 </p>
             </div>
         </div>
@@ -161,52 +170,52 @@
     <section class="benefits" id="benefits">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Kenapa Memilih Kami</span>
-                <h2 class="section-title">Apa yang Anda Dapatkan</h2>
-                <p class="section-subtitle">Tutorial lengkap yang akan mengubah cara Anda menggunakan AI</p>
+                <span class="section-badge" data-i18n="benefits_badge">Kenapa Memilih Kami</span>
+                <h2 class="section-title" data-i18n="benefits_title">Apa yang Anda Dapatkan</h2>
+                <p class="section-subtitle" data-i18n="benefits_subtitle">Tutorial lengkap yang akan mengubah cara Anda menggunakan AI</p>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Privasi 100%</h3>
-                    <p>Data tetap di komputer sendiri. Tidak perlu khawatir data bocor ke pihak ketiga.</p>
+                    <h3 data-i18n="benefit_1_title">Privasi 100%</h3>
+                    <p data-i18n="benefit_1_desc">Data tetap di komputer sendiri. Tidak perlu khawatir data bocor ke pihak ketiga.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-wifi-slash"></i>
                     </div>
-                    <h3>Works Offline</h3>
-                    <p>Jalan tanpa internet. AI tetap responsif meski koneksi terputus.</p>
+                    <h3 data-i18n="benefit_2_title">Works Offline</h3>
+                    <p data-i18n="benefit_2_desc">Jalan tanpa internet. AI tetap responsif meski koneksi terputus.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Multi-Platform</h3>
-                    <p>Connect ke Telegram, WhatsApp, Discord, dan Signal sekaligus.</p>
+                    <h3 data-i18n="benefit_3_title">Multi-Platform</h3>
+                    <p data-i18n="benefit_3_desc">Connect ke Telegram, WhatsApp, Discord, dan Signal sekaligus.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-coins"></i>
                     </div>
-                    <h3>100% Gratis</h3>
-                    <p>Tanpa API key, tanpa biaya bulanan. Bayar sekali, pakai selamanya.</p>
+                    <h3 data-i18n="benefit_4_title">100% Gratis</h3>
+                    <p data-i18n="benefit_4_desc">Tanpa API key, tanpa biaya bulanan. Bayar sekali, pakai selamanya.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Pemula Friendly</h3>
-                    <p>Tidak perlu coding. Ikuti langkah demi langkah dengan screenshot.</p>
+                    <h3 data-i18n="benefit_5_title">Pemula Friendly</h3>
+                    <p data-i18n="benefit_5_desc">Tidak perlu coding. Ikuti langkah demi langkah dengan screenshot.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>30 Menit Setup</h3>
-                    <p>Dari nol sampai AI berjalan hanya dalam 30-45 menit.</p>
+                    <h3 data-i18n="benefit_6_title">30 Menit Setup</h3>
+                    <p data-i18n="benefit_6_desc">Dari nol sampai AI berjalan hanya dalam 30-45 menit.</p>
                 </div>
             </div>
         </div>
@@ -216,9 +225,9 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Testimoni</span>
-                <h2 class="section-title">Apa Kata Mereka</h2>
-                <p class="section-subtitle">500+ orang sudah berhasil mengikuti tutorial ini</p>
+                <span class="section-badge" data-i18n="testimonials_badge">Testimoni</span>
+                <h2 class="section-title" data-i18n="testimonials_title">Apa Kata Mereka</h2>
+                <p class="section-subtitle" data-i18n="testimonials_subtitle">500+ orang sudah berhasil mengikuti tutorial ini</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -331,22 +340,22 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Paket Lengkap</span>
-                <h2 class="section-title">Investasi untuk Masa Depan</h2>
-                <p class="section-subtitle">Sekali bayar, akses selamanya</p>
+                <span class="section-badge" data-i18n="pricing_badge">Paket Lengkap</span>
+                <h2 class="section-title" data-i18n="pricing_title">Investasi untuk Masa Depan</h2>
+                <p class="section-subtitle" data-i18n="pricing_subtitle">Sekali bayar, akses selamanya</p>
             </div>
             <div class="pricing-grid">
                 <!-- Pro (Best Seller) -->
                 <div class="pricing-card featured">
                     <div class="pricing-badge">
-                        <i class="fas fa-crown"></i> BEST SELLER
+                        <i class="fas fa-crown"></i> <span data-i18n="package_pro">Pro</span>
                     </div>
                     <div class="pricing-header">
-                        <h3 class="pricing-name">Pro</h3>
-                        <p class="pricing-desc">Paling populer untuk profesional</p>
+                        <h3 class="pricing-name" data-i18n="package_pro">Pro</h3>
+                        <p class="pricing-desc" data-i18n="package_pro_desc">Paling populer untuk profesional</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="original-price">Rp 300.000</span>
+                        <span class="original-price" data-i18n="original_price">Rp 300.000</span>
                         <div class="current-price">
                             <span class="currency">Rp</span>
                             <span class="amount">150.000</span>
@@ -354,16 +363,16 @@
                     </div>
                     <div class="pricing-usdt">
                         <i class="fab fa-ethereum"></i> ~9.4 USDT
-                        <span class="save-badge">Hemat 50%</span>
+                        <span class="save-badge" data-i18n="save_badge">Hemat 50%</span>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Ebook PDF lengkap</li>
-                        <li><i class="fas fa-check"></i> Automation scripts</li>
-                        <li><i class="fas fa-check"></i> Content generator</li>
-                        <li><i class="fas fa-check"></i> Caption templates</li>
-                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="feature_pdf">Ebook PDF lengkap</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="feature_scripts">Automation scripts</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="feature_generator">Content generator</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="feature_templates">Caption templates</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="feature_priority">Priority support</span></li>
                     </ul>
-                    <button class="btn-pricing btn-featured" onclick="selectPackage('pro', 150000, 9.4)">
+                    <button class="btn-pricing btn-featured" onclick="selectPackage('pro', 150000, 9.4)" data-i18n="btn_select">
                         Pilih Pro
                     </button>
                 </div>
@@ -377,32 +386,32 @@
             <div class="payment-card">
                 <div class="payment-header">
                     <i class="fas fa-wallet"></i>
-                    <h2>Pembayaran USDT</h2>
+                    <h2 data-i18n="payment_title">Pembayaran USDT</h2>
                 </div>
                 <div class="payment-details" id="paymentDetails">
                     <div class="selected-package" id="selectedPackage">
-                        <span class="package-name">Paket Pro</span>
+                        <span class="package-name" data-i18n="your_package">Paket Anda</span>
                         <span class="package-price">Rp 150.000</span>
                         <span class="package-usdt">~9.4 USDT</span>
                     </div>
                     <div class="usdt-info">
                         <div class="rate-display">
-                            <span>Rate: 1 USDT ≈ Rp 16.000</span>
-                            <span class="rate-update">(Update: <span id="rateTime">just now</span>)</span>
+                            <span data-i18n="rate_label">Rate: 1 USDT ≈ Rp 16.000</span>
+                            <span class="rate-update">(<span data-i18n="rate_update">Update:</span> <span id="rateTime">just now</span>)</span>
                         </div>
                     </div>
                     <div class="payment-methods">
                         <div class="method-tabs">
                             <button class="method-tab active" data-network="trc20">
-                                <i class="fas fa-circle"></i> TRC20
+                                <i class="fas fa-circle"></i> <span data-i18n="network_trc20">TRC20</span>
                             </button>
                         </div>
                         <div class="wallet-section">
-                            <p class="wallet-label">Kirim USDT ke alamat ini:</p>
+                            <p class="wallet-label" data-i18n="wallet_label">Kirim USDT ke alamat ini:</p>
                             <div class="wallet-address" id="walletAddress">
                                 <span class="address-text">TEW7r4BVnr88psSVDNK45D7GGrWgo93FwS</span>
                                 <button class="copy-btn" onclick="copyAddress()">
-                                    <i class="fas fa-copy"></i> Copy
+                                    <i class="fas fa-copy"></i> <span data-i18n="copy_btn">Copy</span>
                                 </button>
                             </div>
                             <div class="qr-code" id="qrCode">
@@ -415,15 +424,15 @@
                     <div class="payment-instruction">
                         <div class="instruction-step">
                             <span class="step-number">1</span>
-                            <p>Pilih paket di atas dan kirim USDT sesuai nominal</p>
+                            <p data-i18n="instruction_1">Pilih paket di atas dan kirim USDT sesuai nominal</p>
                         </div>
                         <div class="instruction-step">
                             <span class="step-number">2</span>
-                            <p>Screenshot bukti pembayaran</p>
+                            <p data-i18n="instruction_2">Screenshot bukti pembayaran</p>
                         </div>
                         <div class="instruction-step">
                             <span class="step-number">3</span>
-                            <p>Isi form konfirmasi di bawah dengan data pembayaran Anda</p>
+                            <p data-i18n="instruction_3">Isi form konfirmasi di bawah dengan data pembayaran Anda</p>
                         </div>
                     </div>
                     <div class="payment-contact">
@@ -434,34 +443,34 @@
                             <input type="hidden" name="_captcha" value="false">
                             
                             <div class="form-group">
-                                <label for="name">Nama Lengkap</label>
+                                <label for="name" data-i18n="form_name">Nama Lengkap</label>
                                 <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
                             </div>
                             
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email" data-i18n="form_email">Email</label>
                                 <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
                             </div>
                             
                             <div class="form-group">
-                                <label for="package">Paket</label>
+                                <label for="package" data-i18n="form_package">Paket</label>
                                 <select id="package" name="package" required>
                                     <option value="Pro - Rp 150.000">Pro - Rp 150.000 (~9.4 USDT)</option>
                                 </select>
                             </div>
                             
                             <div class="form-group">
-                                <label for="txid">Transaction ID / TxHash</label>
+                                <label for="txid" data-i18n="form_txid">Transaction ID / TxHash</label>
                                 <input type="text" id="txid" name="txid" required placeholder="Masukkan Transaction ID">
                             </div>
                             
                             <div class="form-group">
-                                <label for="notes">Catatan (Opsional)</label>
+                                <label for="notes" data-i18n="form_notes">Catatan (Opsional)</label>
                                 <textarea id="notes" name="notes" rows="3" placeholder="Tambahkan catatan jika diperlukan"></textarea>
                             </div>
                             
                             <button type="submit" class="btn-submit">
-                                <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                                <i class="fas fa-paper-plane"></i> <span data-i18n="btn_submit">Kirim Konfirmasi</span>
                             </button>
                         </form>
                     </div>
@@ -469,15 +478,15 @@
                 <div class="trust-badges">
                     <div class="trust-item">
                         <i class="fas fa-shield-alt"></i>
-                        <span>Pembayaran Aman</span>
+                        <span data-i18n="trust_secure">Pembayaran Aman</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-bolt"></i>
-                        <span>Pengiriman Instan</span>
+                        <span data-i18n="trust_instant">Pengiriman Instan</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-undo"></i>
-                        <span>Garansi 7 Hari</span>
+                        <span data-i18n="trust_guarantee">Garansi 7 Hari</span>
                     </div>
                 </div>
             </div>
@@ -488,44 +497,44 @@
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">FAQ</span>
-                <h2 class="section-title">Pertanyaan Umum</h2>
+                <span class="section-badge" data-i18n="faq_badge">FAQ</span>
+                <h2 class="section-title" data-i18n="faq_title">Pertanyaan Umum</h2>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Apakah perlu coding untuk mengikuti tutorial?</span>
+                        <span data-i18n="faq_1_q">Apakah perlu coding untuk mengikuti tutorial?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Tidak perlu! Tutorial ini didesain untuk pemula. Semua langkah dijelaskan dengan screenshot detail. Cukup ikuti langkah demi langkah.</p>
+                        <p data-i18n="faq_1_a">Tidak perlu! Tutorial ini didesain untuk pemula. Semua langkah dijelaskan dengan screenshot detail. Cukup ikuti langkah demi langkah.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Berapa lama proses setup?</span>
+                        <span data-i18n="faq_2_q">Berapa lama proses setup?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Untuk pemula, estimasi waktu 30-45 menit. Sudah termasuk download dan konfigurasi semua platform (Telegram, WhatsApp, dll).</p>
+                        <p data-i18n="faq_2_a">Untuk pemula, estimasi waktu 30-45 menit. Sudah termasuk download dan konfigurasi semua platform (Telegram, WhatsApp, dll).</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Apakah bisa jalan di Windows?</span>
+                        <span data-i18n="faq_3_q">Apakah bisa jalan di Windows?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Bisa! Tutorial mencakup Windows (WSL2), macOS, dan Linux. Semua sistem operasi populer didukung.</p>
+                        <p data-i18n="faq_3_a">Bisa! Tutorial mencakup Windows (WSL2), macOS, dan Linux. Semua sistem operasi populer didukung.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Apakah ada update berkala?</span>
+                        <span data-i18n="faq_4_q">Apakah ada update berkala?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Ya! Untuk paket Pro dan Bundle, Anda akan mendapatkan update gratis seumur hidup. File akan dikirim via email setiap ada versi baru.</p>
+                        <p data-i18n="faq_4_a">Ya! Untuk paket Pro dan Bundle, Anda akan mendapatkan update gratis seumur hidup. File akan dikirim via email setiap ada versi baru.</p>
                     </div>
                 </div>
             </div>
@@ -536,14 +545,14 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-card">
-                <h2>Siap Punya AI Assistant Sendiri?</h2>
-                <p>Jangan lewatkan penawaran terbatas ini. Diskon 50% hanya untuk 50 pembeli pertama.</p>
-                <a href="#pricing" class="btn-cta">
+                <h2 data-i18n="cta_title">Siap Punya AI Assistant Sendiri?</h2>
+                <p data-i18n="cta_text">Jangan lewatkan penawaran terbatas ini. Diskon 50% hanya untuk 50 pembeli pertama.</p>
+                <a href="#pricing" class="btn-cta" data-i18n="btn_cta">
                     <i class="fas fa-download"></i> Dapatkan Sekarang
                 </a>
                 <div class="cta-guarantee">
                     <i class="fas fa-shield-alt"></i>
-                    <span>Garansi 7 hari uang kembali. No questions asked.</span>
+                    <span data-i18n="cta_guarantee">Garansi 7 hari uang kembali. No questions asked.</span>
                 </div>
             </div>
         </div>
@@ -558,10 +567,10 @@
                         <i class="fas fa-robot"></i>
                         <span>OpenClaw ID</span>
                     </div>
-                    <p>Tutorial praktis untuk AI assistant pribadi. Belajar teknologi tanpa ribet.</p>
+                    <p data-i18n="footer_desc">Tutorial praktis untuk AI assistant pribadi. Belajar teknologi tanpa ribet.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Links</h4>
+                    <h4 data-i18n="footer_links">Links</h4>
                     <a href="#benefits">Manfaat</a>
                     <a href="#testimonials">Testimoni</a>
                     <a href="#pricing">Harga</a>
@@ -569,12 +578,12 @@
                     <a href="#">Refund Policy</a>
                 </div>
                 <div class="footer-contact">
-                    <h4>Kontak</h4>
+                    <h4 data-i18n="footer_contact">Kontak</h4>
                     <p><i class="fas fa-envelope"></i> support@openclawid.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 OpenClaw ID. All rights reserved.</p>
+                <p>&copy; 2026 OpenClaw ID. <span data-i18n="footer_rights">All rights reserved.</span></p>
             </div>
         </div>
     </footer>

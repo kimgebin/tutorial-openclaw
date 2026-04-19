@@ -4,6 +4,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language system first
+    const savedLang = i18n.initLanguage();
+    i18n.setLanguage(savedLang);
+    
     // Initialize all features
     initCountdown();
     initStickyCTA();
